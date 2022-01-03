@@ -14,6 +14,7 @@ app.get('/js', (req, res) => {
 app.get('/styles', (req, res) => {
     res.sendFile(path.join(__dirname, '../public/index.css'))
   })
+  
 const port = process.env.PORT || 3000
 
 app.listen(port, () => {
